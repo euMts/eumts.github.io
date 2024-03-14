@@ -1,0 +1,76 @@
+{
+  "user": {
+    "name": "Matheus Tem Pass",
+    "profilePicUrl": "/images/png/profilePic.png",
+    "role": "Engenheiro de Software",
+    "age": "anos",
+    "emailUrl": "matheusetp@hotmail.com",
+    "linkedinUrl": "https://www.linkedin.com/in/matheusetp/",
+    "youtubeUrl": "https://www.youtube.com/@devMts",
+    "tiktokUrl": "https://www.tiktok.com/@devMts",
+    "githubUrl": "https://www.github.com/euMts"
+  },
+  "about": {
+    "title": "Sobre mim",
+    "description": [
+      "Engenheiro de software apaixonado pela tecnologia desde meus 14 anos de idade.",
+      "Penso no produto como um todo, desenvolvendo soluções escaláveis que acompanham as demandas do mercado, não apenas no código, mas em tudo que há por trás do valor que ele agrega ao negócio."
+    ]
+  },
+  "projects": {
+    "title": "Projetos Recentes",
+    "items": [
+      {
+        "screenshotUrl": "https://raw.githubusercontent.com/euMts/simulador_de_aposentadoria/main/screenshot.png",
+        "url": "https://eumts.github.io/simulador_de_aposentadoria/",
+        "name": "Simulador de Aposentadoria",
+        "desc": "Calculadora de juros compostos voltada para simulação de aposentadoria por investimentos",
+        "lang": ["2023", "Next • TypeScript"]
+      },
+      {
+        "screenshotUrl": "https://lh3.googleusercontent.com/JX0e9Bd7tU1d3QNC6cclF35C0-kXv8vHd7rjI8n7Y-ClybPNd84vGmge9eyf7_mE_ds21YAUQF3hX-4J1WSUWc2cvg=s1280-w1280-h800",
+        "name": "Contador de Perguntas ChatGPT",
+        "url": "https://github.com/euMts/chatgpt_question_count",
+        "desc": "Contador para o ChatGPT que utiliza o chrome storage para armazenar o número de perguntas que você fez ao chat.",
+        "lang": ["2023", "Javascript • HTML"]
+      }
+    ]
+  },
+  "contact": {
+    "title": "Contato",
+    "description": [
+      "Novas conexões são sempre bem vindas!",
+      "Ficarei feliz em conversar a respeito de"
+    ],
+    "descriptionFinalWords": [
+      "projetos",
+      "parcerias",
+      "inovações",
+      "oportunidades"
+    ],
+    "name": { "title": "Nome", "placeholder": "Digite seu nome aqui" },
+    "email": { "title": "E-mail", "placeholder": "Digite seu e-mail aqui" },
+    "message": {
+      "title": "Mensagem",
+      "placeholder": "Digite sua mensagem aqui"
+    },
+    "buttonTitle": "Enviar",
+    "alertMessages": {
+      "success": "Mensagem enviada com sucesso!",
+      "loading": "Enviando mensagem...",
+      "defaultError": "Erro ao enviar mensagem.",
+      "incompleteInfo": "Todos os campos devem ser preenchidos!",
+      "shortInput": "deve conter no mínimo 3 caracteres!",
+      "invalidEmail": "E-mail inválido."
+    }
+  },
+  "donate": {
+    "makePayment": "Realizar pagamento",
+    "choosePlatform": "Escolha uma plataforma:",
+    "thanks": "Obrigado!",
+    "description": [
+      "Obrigado por confiar em meu trabalho",
+      "Qualquer dúvida ou sugestão entre em contato comigo clicando aqui"
+    ]
+  }
+}

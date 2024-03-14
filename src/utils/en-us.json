@@ -1,0 +1,76 @@
+{
+  "user": {
+    "name": "Matheus Tem Pass",
+    "profilePicUrl": "/images/png/profilePic.png",
+    "role": "Software Engineer",
+    "age": "years",
+    "emailUrl": "matheusetp@hotmail.com",
+    "linkedinUrl": "https://www.linkedin.com/in/matheusetp/",
+    "youtubeUrl": "https://www.youtube.com/@devMts",
+    "tiktokUrl": "https://www.tiktok.com/@devMts",
+    "githubUrl": "https://www.github.com/euMts"
+  },
+  "about": {
+    "title": "About me",
+    "description": [
+      "Software engineer passionate about technology since I was 14 years old.",
+      "I think about the product as a whole, developing scalable solutions that keep up with market demands, not just in the code, but in everything behind the value it adds to the business."
+    ]
+  },
+  "projects": {
+    "title": "Recent Projects",
+    "items": [
+      {
+        "screenshotUrl": "https://raw.githubusercontent.com/euMts/simulador_de_aposentadoria/main/screenshot.png",
+        "url": "https://eumts.github.io/simulador_de_aposentadoria/",
+        "name": "Retirement Simulator",
+        "desc": "Compound interest calculator designed to simulate investment retirement",
+        "lang": ["2023", "Next • TypeScript"]
+      },
+      {
+        "screenshotUrl": "https://lh3.googleusercontent.com/JX0e9Bd7tU1d3QNC6cclF35C0-kXv8vHd7rjI8n7Y-ClybPNd84vGmge9eyf7_mE_ds21YAUQF3hX-4J1WSUWc2cvg=s1280-w1280-h800",
+        "name": "ChatGPT Question Count",
+        "url": "https://github.com/euMts/chatgpt_question_count",
+        "desc": "Counter for ChatGPT that uses chrome storage to store the number of questions you made to the chat.",
+        "lang": ["2023", "Javascript • HTML"]
+      }
+    ]
+  },
+  "contact": {
+    "title": "Contact",
+    "description": [
+      "New connections are always welcome!",
+      "I'd be happy to talk about"
+    ],
+    "descriptionFinalWords": [
+      "projects",
+      "partnerships",
+      "innovations",
+      "opportunities"
+    ],
+    "name": { "title": "Name", "placeholder": "Enter your name here" },
+    "email": { "title": "E-mail", "placeholder": "Enter your email here" },
+    "message": {
+      "title": "Message",
+      "placeholder": "Enter your message here"
+    },
+    "buttonTitle": "Send",
+    "alertMessages": {
+      "success": "Message sent!",
+      "loading": "Sending message...",
+      "defaultError": "Error sending message.",
+      "incompleteInfo": "All fields must be filled!",
+      "shortInput": "must have at least 3 characteres!",
+      "invalidEmail": "Invalid E-mail."
+    }
+  },
+  "donate": {
+    "makePayment": "Make payment",
+    "choosePlatform": "Choose a platform:",
+    "thanks": "Thanks!",
+    "description": [
+      "Thanks for trusting in my work",
+      "Any questions or suggestions, please contact me by clicking here"
+    ]
+  }
+}
