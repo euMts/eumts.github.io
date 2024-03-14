@@ -45,7 +45,7 @@ export const DonateSection = () => {
                   <S.SubTitle key={index}>
                     {words.join(" ")}{" "}
                     <S.ClickableText
-                      href={`http://localhost:3000?lang=${lang}#contact`}
+                      href={`http://www.matheuspass.dev?lang=${lang}#contact`}
                       target="_blank"
                       rel="noreferrer"
                     >
