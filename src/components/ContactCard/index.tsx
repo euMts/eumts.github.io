@@ -158,7 +158,7 @@ export const ContactCard = ({
     if (messageType === "") {
       setAlertMessage("");
     }
-  }, [messageType, alertMessages, alertMessage]);
+  }, [messageType, alertMessages, alertMessage, message, name]);
 
   return (
     <>

@@ -1,7 +1,7 @@
 export default function consoleMessage() {
   const url = "https://www.matheuspass.dev/workwithme";
 
-  console.clear();
+  // console.clear();
   console.log(
     "%c Cuidado!",
     "color: #ff0000; font-size: 2.5rem; text-shadow: 2px 0 #000, -2px 0 #000, 0 2px #000, 0 -2px #000, 1px 1px #000, -1px -1px #000, 1px -1px #000, -1px 1px #000"

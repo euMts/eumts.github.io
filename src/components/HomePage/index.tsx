@@ -1,3 +1,4 @@
+import { Suspense } from "react";
 import { AboutSection } from "../AboutSection";
 import { ContactSection } from "../ContactSection";
 import { FloatingBtn } from "../FloatingBtn";
@@ -9,14 +10,16 @@ import * as S from "./styles";
 export const HomePage = () => {
   return (
     <>
-        <S.Container>
-          <HeadSection />
+      <S.Container>
+        <HeadSection />
+        <Suspense>
           <AboutSection />
-          <ProjectsSection />
-          <ContactSection />
-          <Footer />
-          {/* <FloatingBtn /> */}
-        </S.Container>
+        </Suspense>
+        <ProjectsSection />
+        <ContactSection />
+        <Footer />
+        {/* <FloatingBtn /> */}
+      </S.Container>
     </>
   );
 };

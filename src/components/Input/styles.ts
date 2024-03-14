@@ -11,7 +11,7 @@ export const MyInput = styled.input`
   outline: none;
   border: none;
   color: ${primaryWhite};
-  font-family: "Inter", sans-serif;
+  font-family: var(--font-inter), sans-serif;
   /* min-width: 70rem; */
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 `;
@@ -26,7 +26,7 @@ export const MyTextArea = styled.textarea`
   border-radius: 1rem;
   outline: none;
   color: ${primaryWhite};
-  font-family: "Inter", sans-serif;
+  font-family: var(--font-inter), sans-serif;
   /* min-width: 70rem; */
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 `;

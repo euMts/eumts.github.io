@@ -6,26 +6,26 @@ export const FloatingBtn = () => {
   const [scrollY, setScrollY] = useState(0);
   const [visible, setVisible] = useState(false);
 
-  const handleScroll = () => {
-    const position = window.scrollY;
-    setScrollY(position);
-  };
+  // const handleScroll = () => {
+  //   const position = window.scrollY;
+  //   setScrollY(position);
+  // };
 
-  useEffect(() => {
-    window.addEventListener("scroll", handleScroll);
+  // useEffect(() => {
+  //   window.addEventListener("scroll", handleScroll);
 
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, []);
+  //   return () => {
+  //     window.removeEventListener("scroll", handleScroll);
+  //   };
+  // }, []);
 
-  useEffect(() => {
-    if (scrollY >= 200) {
-      setVisible(true);
-    } else {
-      setVisible(false);
-    }
-  });
+  // useEffect(() => {
+  //   if (scrollY >= 200) {
+  //     setVisible(true);
+  //   } else {
+  //     setVisible(false);
+  //   }
+  // }, [scrollY]);
 
   return (
     <>

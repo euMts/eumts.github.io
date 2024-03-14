@@ -7,14 +7,9 @@ import { useEffect } from "react";
 
 export default function NotFound() {
   useEffect(() => {
-    const handleLoad = () => {
-      consoleMessage();
-    };
-    window.addEventListener("load", handleLoad);
-    return () => {
-      window.removeEventListener("load", handleLoad);
-    };
+    consoleMessage();
   }, []);
+
   return (
     <>
       <GlobalStyle />

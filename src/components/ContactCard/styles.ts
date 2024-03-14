@@ -30,7 +30,7 @@ export const Box = styled.div`
 
 export const Title = styled.h1`
   font-size: 2.5rem;
-  font-family: "Poppins", sans-serif;
+  font-family: var(--font-poppins), sans-serif;
   font-weight: 600;
   color: ${primaryBlack};
   padding-bottom: 1rem;
@@ -46,7 +46,7 @@ interface UnderMessageProps {
 }
 
 export const UnderMessage = styled.h2<UnderMessageProps>`
-  font-family: "Poppins", sans-serif;
+  font-family: var(--font-poppins), sans-serif;
   font-size: 2rem;
   color: ${(props) => (props.$isRed === "true" ? primaryRed : primaryBlack)};
   margin-top: 2rem;

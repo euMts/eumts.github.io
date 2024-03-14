@@ -46,7 +46,7 @@ export const Subtitle = styled.h2`
 
 interface ScreenshotProps {
   src: string;
-  bgright: boolean;
+  $bgright: string;
 }
 
 export const Screenshot = styled.div<ScreenshotProps>`
@@ -57,5 +57,6 @@ export const Screenshot = styled.div<ScreenshotProps>`
   border-radius: 2rem 0 2rem;
   background-image: url(${(props) => props.src});
   background-size: cover;
-  background-position: ${(props) => (props.bgright ? "right" : "center")};
+  background-position: ${(props) =>
+    props.$bgright === "true" ? "right" : "center"};
 `;

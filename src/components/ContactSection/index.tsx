@@ -3,24 +3,18 @@ import { ContactCard } from "../ContactCard";
 import * as S from "./styles";
 import TypewriterComponent from "typewriter-effect";
 import { useEffect, useRef } from "react";
+import {
+  useParams,
+  useRouter,
+  useSelectedLayoutSegment,
+  useSelectedLayoutSegments,
+} from "next/navigation";
 
 export const ContactSection = () => {
   const { contactData } = useGlobalContext();
 
   const sectionRef = useRef<HTMLDivElement>(null);
 
-  const route = window.location.href;
-
-  useEffect(() => {
-    if (route.includes("#")) {
-      const sectionId = route.split("#")[1];
-      const sectionElement = document.getElementById(sectionId);
-
-      if (sectionElement) {
-        sectionElement.scrollIntoView({ behavior: "smooth" });
-      }
-    }
-  }, [route]);
   return (
     <>
       <S.Container ref={sectionRef} id="contact">

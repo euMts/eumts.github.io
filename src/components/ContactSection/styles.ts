@@ -49,7 +49,7 @@ export const Box = styled.div<BoxProps>`
 
 export const Title = styled.h1`
   font-size: 4rem;
-  font-family: "Poppins", sans-serif;
+  font-family: var(--font-poppins), sans-serif;
   font-weight: 600;
   color: ${primaryBlack};
   text-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px;
@@ -61,7 +61,7 @@ export const Title = styled.h1`
 
 export const SubTitle = styled.h2`
   font-size: 4rem;
-  font-family: "Poppins", sans-serif;
+  font-family: var(--font-poppins), sans-serif;
   font-weight: 500;
   color: ${primaryBlack};
   margin: 1rem 0;

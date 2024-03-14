@@ -28,7 +28,7 @@ export const Title = styled.h2`
   display: flex;
   font-size: 3.5rem;
   color: ${primaryWhite};
-  font-family: "Inter", sans-serif;
+  font-family: var(--font-inter), sans-serif;
   font-weight: 500;
   cursor: pointer;
 
@@ -40,7 +40,7 @@ export const Title = styled.h2`
 export const SubTitle = styled.h3`
   font-size: 2.5rem;
   color: ${primaryWhite};
-  font-family: "Inter", sans-serif;
+  font-family: var(--font-inter), sans-serif;
   font-weight: 200;
 
   @media (max-width: 480px) {

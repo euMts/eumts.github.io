@@ -23,7 +23,7 @@ export const ProjectCard = ({
         <S.Wrapper>
           <S.Screenshot
             src={screenshotUrl}
-            bgright={name.includes("ChatGPT")}
+            $bgright={name.includes("ChatGPT").toString()}
           />
           <S.Title>{name}</S.Title>
           <S.Subtitle>{desc}</S.Subtitle>

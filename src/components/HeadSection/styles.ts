@@ -23,7 +23,7 @@ export const Wrapper = styled.div`
 
 export const Title = styled.h1`
   font-size: 7.4rem;
-  font-family: "Poppins";
+  font-family: var(--font-poppins), sans-serif;
   font-weight: 200;
   color: ${primaryWhite};
   text-align: center;
@@ -41,7 +41,7 @@ export const Title = styled.h1`
 
 export const SubTitle = styled.h2`
   font-size: 4.8rem;
-  font-family: "Poppins";
+  font-family: var(--font-poppins), sans-serif;
   font-weight: 100;
   color: ${primaryWhite};
   text-align: center;

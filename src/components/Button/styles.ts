@@ -4,7 +4,7 @@ import styled from "styled-components";
 export const MyButton = styled.button`
   border-radius: 1rem;
   background-color: ${primaryBlack};
-  font-family: "Inter", sans-serif;
+  font-family: var(--font-inter), sans-serif;
   padding: 1rem 1.5rem;
   font-weight: 700;
   color: ${primaryWhite};

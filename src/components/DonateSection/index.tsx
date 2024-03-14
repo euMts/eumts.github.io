@@ -4,6 +4,7 @@ import { Switch } from "../Switch";
 import * as S from "./styles";
 import { useGlobalContext } from "@/context/store";
 import { DonateCard } from "../DonateCard";
+import { useSearchParams } from "next/navigation";
 
 export const DonateSection = () => {
   const { donateData, lang, changeLang, setLang } = useGlobalContext();
@@ -12,14 +13,12 @@ export const DonateSection = () => {
     changeLang();
   };
 
-  useEffect(() => {
-    if (window.location.href.includes("?lang=enUs")) {
-      setLang("enUs");
-    }
-    if (window.location.href.includes("?lang=ptBr")) {
-      setLang("ptBr");
-    }
-  }, [window.location.href]);
+  const searchParams = useSearchParams();
+  let paramLang = searchParams.get("lang");
+
+  if (paramLang) {
+    setLang(paramLang);
+  }
 
   return (
     <>

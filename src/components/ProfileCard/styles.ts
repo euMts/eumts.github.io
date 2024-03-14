@@ -54,13 +54,13 @@ export const InfoBox = styled.div`
   width: 100%;
   height: 100%;
   margin: 1rem 0;
-  gap: .5rem;
+  gap: 0.5rem;
 `;
 
 export const Title = styled.h2`
   font-size: 3.5rem;
   color: ${primaryWhite};
-  font-family: "Inter", sans-serif;
+  font-family: var(--font-inter), sans-serif;
   font-weight: 500;
   text-align: center;
 
@@ -72,7 +72,7 @@ export const Title = styled.h2`
 export const SubTitle = styled.h3`
   font-size: 2.5rem;
   color: ${primaryWhite};
-  font-family: "Inter", sans-serif;
+  font-family: var(--font-inter), sans-serif;
   font-weight: 200;
   text-align: center;
 
@@ -84,7 +84,7 @@ export const SubTitle = styled.h3`
 export const SubSubTitle = styled.p`
   font-size: 2rem;
   color: ${primaryWhite};
-  font-family: "Inter", sans-serif;
+  font-family: var(--font-inter), sans-serif;
   font-weight: 200;
 
   @media (max-width: 480px) {

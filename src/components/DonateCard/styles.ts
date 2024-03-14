@@ -69,7 +69,7 @@ export const ButtonArea = styled.div`
 export const Title = styled.h2`
   font-size: 3rem;
   color: ${primaryWhite};
-  font-family: "Inter", sans-serif;
+  font-family: var(--font-inter), sans-serif;
   font-weight: 500;
   text-align: center;
 
@@ -81,7 +81,7 @@ export const SubTitle = styled.h2`
   padding: 0 1rem;
   font-size: 2rem;
   color: ${primaryWhite};
-  font-family: "Inter", sans-serif;
+  font-family: var(--font-inter), sans-serif;
   font-weight: 300;
   text-align: center;
 

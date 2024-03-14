@@ -8,13 +8,7 @@ import { useEffect } from "react";
 
 export default function Home() {
   useEffect(() => {
-    const handleLoad = () => {
-      consoleMessage();
-    };
-    window.addEventListener("load", handleLoad);
-    return () => {
-      window.removeEventListener("load", handleLoad);
-    };
+    consoleMessage();
   }, []);
   return (
     <>

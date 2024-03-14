@@ -1,8 +1,9 @@
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 import { ProfileCard } from "../ProfileCard";
 import { Switch } from "../Switch";
 import * as S from "./styles";
 import { useGlobalContext } from "@/context/store";
+import { useSearchParams } from "next/navigation";
 
 export const AboutSection = () => {
   const { aboutData, lang, changeLang, setLang } = useGlobalContext();
@@ -11,14 +12,14 @@ export const AboutSection = () => {
     changeLang();
   };
 
+  const searchParams = useSearchParams();
+  let paramLang = searchParams.get("lang");
+
   useEffect(() => {
-    if (window.location.href.includes("?lang=enUs")) {
-      setLang("enUs");
+    if (paramLang) {
+      setLang(paramLang);
     }
-    if (window.location.href.includes("?lang=ptBr")) {
-      setLang("ptBr");
-    }
-  }, [window.location.href]);
+  }, [paramLang, setLang]);
 
   return (
     <>
