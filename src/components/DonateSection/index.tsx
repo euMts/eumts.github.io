@@ -16,9 +16,13 @@ export const DonateSection = () => {
   const searchParams = useSearchParams();
   let paramLang = searchParams.get("lang");
 
-  if (paramLang) {
-    setLang(paramLang);
-  }
+  useEffect(() => {
+    if (paramLang) {
+      if (paramLang === "ptBr" || paramLang === "enUs") {
+        setLang(paramLang);
+      }
+    }
+  }, [paramLang]);
 
   return (
     <>

@@ -1,4 +1,4 @@
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import { ProfileCard } from "../ProfileCard";
 import { Switch } from "../Switch";
 import * as S from "./styles";
@@ -17,9 +17,11 @@ export const AboutSection = () => {
 
   useEffect(() => {
     if (paramLang) {
-      setLang(paramLang);
+      if (paramLang === "ptBr" || paramLang === "enUs") {
+        setLang(paramLang);
+      }
     }
-  }, [paramLang, setLang]);
+  }, [paramLang]);
 
   return (
     <>
