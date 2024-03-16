@@ -8,12 +8,9 @@ export default function consoleMessage() {
   );
   console.log(
     "%cTudo que você fizer poderá ser utilizado contra você!\n",
-    "color: #fff; font-size: 2rem;"
+    "font-size: 2rem;"
   );
-  console.log(
-    `%cVenha trabalhar comigo: \n${url}`,
-    "color: #fff; font-size: 1.5rem;"
-  );
+  console.log(`%cVenha trabalhar comigo: \n${url}`, "font-size: 1.5rem;");
   console.log("\n\n\n");
   console.log(
     "%c Be Careful!",
@@ -21,7 +18,7 @@ export default function consoleMessage() {
   );
   console.log(
     "%cEverything you do can be used against you!\n",
-    "color: #fff; font-size: 2rem;"
+    "font-size: 2rem;"
   );
-  console.log(`%cWork with me: \n${url}`, "color: #fff; font-size: 1.5rem;");
+  console.log(`%cWork with me: \n${url}`, "font-size: 1.5rem;");
 }
