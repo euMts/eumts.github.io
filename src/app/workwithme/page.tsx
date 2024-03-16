@@ -1,12 +1,8 @@
+"use client";
 export default function WorkWithMe() {
-  const router =
-    typeof window !== "undefined"
-      ? require("next/navigation").useRouter()
-      : null;
-
-  if (router) {
-    router.push("https://www.linkedin.com/in/matheusetp/");
+  if (typeof window !== "undefined") {
+    window.location.href = "https://www.linkedin.com/in/matheusetp/";
   }
 
-  return <></>;
+  return null;
 }
