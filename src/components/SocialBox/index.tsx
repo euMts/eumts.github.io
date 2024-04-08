@@ -10,13 +10,13 @@ export const SocialBox = () => {
   return (
     <>
       <S.SocialBox>
-        <S.IconBox
+        {/* <S.IconBox
           href={`mailto:${userData.emailUrl}`}
           target="_blank"
           rel="noreferrer"
         >
           <MdOutlineEmail />
-        </S.IconBox>
+        </S.IconBox> */}
         <S.IconBox href={userData.linkedinUrl} target="_blank" rel="noreferrer">
           <FaLinkedin />
         </S.IconBox>
