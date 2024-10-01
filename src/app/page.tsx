@@ -1,5 +1,4 @@
 "use client";
-import { GoogleCaptchaWrapper } from "@/components/GoogleCaptchaWrapper";
 import { HomePage } from "@/components/HomePage";
 import { GlobalContextProvider } from "@/context/store";
 import GlobalStyle from "@/styles/global";
@@ -14,9 +13,7 @@ export default function Home() {
     <>
       <GlobalStyle />
       <GlobalContextProvider>
-        <GoogleCaptchaWrapper>
           <HomePage />
-        </GoogleCaptchaWrapper>
       </GlobalContextProvider>
     </>
   );

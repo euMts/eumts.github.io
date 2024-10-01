@@ -3,7 +3,6 @@ import { useEffect, useState } from "react";
 import { Input } from "../Input";
 import * as S from "./styles";
 import { Button } from "../Button";
-import { useGoogleReCaptcha } from "react-google-recaptcha-v3";
 import axios from "axios";
 import { validateForm } from "@/utils/validateForm";
 
@@ -43,7 +42,6 @@ export const ContactCard = ({
   const [messageType, setMessageType] = useState<string>("");
   const [alertMessage, setAlertMessage] = useState("");
   const [submitError, setSubmitError] = useState("false");
-  const { executeRecaptcha } = useGoogleReCaptcha();
 
   const handleChangeName = (event: any) => {
     setUserName(event.target.value);
@@ -93,44 +91,12 @@ export const ContactCard = ({
     setMessageType("");
     setSubmitError("false");
 
-    if (!executeRecaptcha) {
-      console.log("not available to execute recaptcha");
-      return;
-    }
-
     if (!isFormValid()) {
       return;
     }
 
     setMessageType("loading");
 
-    const gRecaptchaToken = await executeRecaptcha("inquirySubmit");
-
-    try {
-      const response = await axios({
-        method: "post",
-        url: "/api/email",
-        data: { gRecaptchaToken, userName, userEmail, userMessage },
-        headers: {
-          Accept: "application/json, text/plain, */*",
-          "Content-Type": "application/json",
-        },
-      });
-
-      if (response?.data?.success === true) {
-        setSubmitError("false");
-        setMessageType("success");
-        setUserName("");
-        setUserEmail("");
-        setUserMessage("");
-      } else {
-        setSubmitError("true");
-        setMessageType("defaultError");
-      }
-    } catch {
-      setSubmitError("true");
-      setMessageType("defaultError");
-    }
   };
 
   useEffect(() => {
